@@ -44,7 +44,7 @@
                 git</a></p>
         <p>Web-start application: <script src="https://www.java.com/js/deployJava.js"></script>
             <script>
-                var jnlpFile = "tomo.jnlp";
+                var jnlpFile = "<%=ctx%>/webstart/tomo.jnlp";
                 deployJava.createWebStartLaunchButtonEx(jnlpFile);
             </script><br><i>Needed to run Java 6, 7 . Tested on Windows 7. Does not work in Windows 8. Sometimes in the case of safety interlocks
                                 java should be decreased from a high level of security at the control panel in the middle</i> 
