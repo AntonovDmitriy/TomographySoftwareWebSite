@@ -46,7 +46,7 @@
                 git</a></p>
         <p>Веб-старт приложения: <script src="https://www.java.com/js/deployJava.js"></script>
             <script>
-                var jnlpFile = "<%=ctx%>/webstart/tomo.jnlp";
+                var jnlpFile = "http://localhost:8080/TomographySoftwareWebSite/webstart/tomo.jnlp";
                 deployJava.createWebStartLaunchButtonEx(jnlpFile);
             </script><br><i>Для запуска необходима Java 6, 7. Протестировано в Windows 7. Пока не работает в Windows 8. Иногда в случае блокировки безопасности
                 java следует понизить уровень безопасности с высокого на средний в панели управления</i> 
