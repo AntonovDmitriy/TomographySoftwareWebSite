@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-   "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 
 <html>
     <head>
@@ -34,11 +33,14 @@
         <p> Если у пользователя программы возникнут любые вопросы к автору, можно написать их по
             адресу: <a href="mailto:antonov.other@gmail.com">antonov.other@gmail.com</a></p>
         <h2>Фотографии</h2>
-        <p><img src="images/image006.jpg"></p>
-        <p><img src="images/image008.jpg"></p>
-        <p><img src="images/image003.jpg"></p>
-        <p><img src="images/image001.jpg"></p>
-        <p><img src="images/splash.jpg"></p>
+        <%
+            String ctx = request.getContextPath();
+        %>
+        <p><img src="<%=ctx%>/images/image006.jpg"></p>
+        <p><img src="<%=ctx%>/images/image008.jpg"></p>
+        <p><img src="<%=ctx%>/images/image003.jpg"></p>
+        <p><img src="<%=ctx%>/images/image001.jpg"></p>
+        <p><img src="<%=ctx%>/images/splash.jpg"></p>
         <h2>Ссылки</h2>
         <p> Исходный код проекта: <a href="https://github.com/AntonovDmitriy/TomographySoftwareDiploma">
                 git</a></p>
@@ -46,8 +48,8 @@
             <script>
                 var jnlpFile = "tomo.jnlp";
                 deployJava.createWebStartLaunchButtonEx(jnlpFile);
-            </script><br><i>Для запуска небходима Java 6, 7. Протестировано в Windows 7. Пока не работает в Windows 8. Иногда в случае блокировки безопасности
-            java следует понизить уровень безопасности с высокого на средний в панели управления</i> 
+            </script><br><i>Для запуска необходима Java 6, 7. Протестировано в Windows 7. Пока не работает в Windows 8. Иногда в случае блокировки безопасности
+                java следует понизить уровень безопасности с высокого на средний в панели управления</i> 
         </p>
         <p>Стационарная версия: <a href="http://app-helloweb.rhcloud.com/TomographySoftwareDiploma-1.0.0.zip">zip</a></p>
     </body>

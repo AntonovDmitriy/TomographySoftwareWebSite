@@ -7,6 +7,7 @@ package com.antonov.tomographysoftwarewebsite;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Locale;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +22,10 @@ public class MainPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        if (request.getLocale().getLanguage().equals("ru")) {
+            request.getRequestDispatcher("/index_ru.jsp").forward(request, response);
+        } else {
+            request.getRequestDispatcher("/index_en.jsp").forward(request, response);
+        }
     }
 }
