@@ -49,6 +49,6 @@
             </script><br><i>Needed to run Java 6, 7 . Tested on Windows 7. Does not work in Windows 8. Sometimes in the case of safety interlocks
                                 java should be decreased from a high level of security at the control panel in the middle</i> 
         </p>
-        <p>Стационарная версия: <a href="http://app-helloweb.rhcloud.com/TomographySoftwareDiploma-1.0.0.zip">zip</a></p>
+        <p>Стационарная версия: <a href="http://tomography-antonov.rhcloud.com/webstart/TomographySoftwareDiploma-1.0.0.zip">zip</a></p>
     </body>
 </html>

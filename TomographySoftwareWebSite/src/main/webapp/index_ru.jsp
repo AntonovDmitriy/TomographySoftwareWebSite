@@ -51,6 +51,6 @@
             </script><br><i>Для запуска необходима Java 6, 7. Протестировано в Windows 7. Пока не работает в Windows 8. Иногда в случае блокировки безопасности
                 java следует понизить уровень безопасности с высокого на средний в панели управления</i> 
         </p>
-        <p>Стационарная версия: <a href="http://app-helloweb.rhcloud.com/TomographySoftwareDiploma-1.0.0.zip">zip</a></p>
+        <p>Стационарная версия: <a href="http://tomography-antonov.rhcloud.com/webstart/TomographySoftwareDiploma-1.0.0.zip">zip</a></p>
     </body>
 </html>
