@@ -16,6 +16,8 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  *
@@ -23,12 +25,15 @@ import javax.servlet.ServletResponse;
  */
 public class IpFilter implements Filter {
 
+    private static Logger logger = LoggerFactory.getLogger(IpFilter.class);
+    
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        logger.trace("new request ip: "+request.getRemoteAddr());
         chain.doFilter(request, response);
     }
 
